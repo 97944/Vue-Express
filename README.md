@@ -3,7 +3,7 @@
 # 環境
 Vue.js + Express
 
-#セットアップ
+# セットアップ
 Express
 `cd server`
 `npm install`
