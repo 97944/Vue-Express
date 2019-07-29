@@ -9,12 +9,12 @@
         >
           <v-list-item three-line>
             <v-list-item-content>
-              <v-list-item-title class="headline mb-1">{{member.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{member.email}}</v-list-item-subtitle>
+              <v-list-item-title class="headline mb-1">{{member.fname}} {{member.lname}}</v-list-item-title>
+              <v-list-item-subtitle>{{member.company}} {{member.dept}}</v-list-item-subtitle>
             </v-list-item-content>
 
             <v-list-item-avatar tile size="80" color="grey">
-              <v-img :src="member.avatar"></v-img>
+              <v-img :src="member.image_path"></v-img>
             </v-list-item-avatar>
           </v-list-item>
         </v-card>
@@ -31,7 +31,7 @@ export default {
     members: []
   }),
   created: function(){
-    axios.get("http://localhost:3000/members")
+    axios.get("/users")
       .then((res) => {
         this.members = res.data;
       });

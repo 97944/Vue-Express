@@ -1,0 +1,12 @@
+html(lang="ja")
+    head
+        meta(charset="utf-8")
+    body
+        h1 #{title}
+            form(action="update" method="post" encType="multipart/form-data")
+                input(type="text" name="lname" placeholder="山田")
+                input(type="text" name="fname" placeholder="花子")
+                input(type="text" name="company" placeholder="ユニリタ")
+                input(type="text" name="dept" placeholder="第一営業部")
+                input(type="file" name="image")
+                button(type="submit") 送信

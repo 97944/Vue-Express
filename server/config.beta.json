@@ -1,0 +1,17 @@
+{
+    "oidc": {
+        "useDefault": true,
+        "authorizationURL": "https://accounts.beta.cloudgear.services/authorize",
+        "issuer": "https://accounts.beta.cloudgear.services/",
+        "tokenURL": "https://accounts.beta.cloudgear.services/token",
+        "userInfoURL": "https://accounts.beta.cloudgear.services/userinfo",
+        "clientID": "b28c2a29-6c62-4e21-80be-13283de7669d",
+        "clientSecret": "secret",
+        "callbackURL": "http://34.225.17.197:8080/authcallback",
+        "scope": [
+            "openid",
+            "email",
+            "profile"
+        ]
+    }
+}

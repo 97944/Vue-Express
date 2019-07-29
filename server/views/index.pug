@@ -1,0 +1,27 @@
+//-
+  extends layout
+
+  block content
+    h1= title
+    Welcome to #{title}
+
+doctype html
+
+html(lang="ja")
+
+  head
+      meta(charset="utf-8")
+  body
+      h1 従業員一覧
+      section
+          dv
+          table(border='1')
+              each emp in employees
+                tr
+                  td
+                    img(src=emp.image_path)
+                  td #{emp.lname}
+                  td #{emp.fname}
+                  td #{emp.company}
+                  td #{emp.dept}
+                  td #{emp.date}
